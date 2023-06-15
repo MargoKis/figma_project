@@ -1,0 +1,409 @@
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 210px;
+  height: 60px;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  line-height: 29px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.005em;
+}
+
+.footer__link, .footer__contacts, .footer__btn-request, .section__name-review, .section__card-btn, .header__nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer__text-line, .section__paragraph-features, .section__paragraph-storage-bank, .section__paragraph-data, .section__btn-learn-more {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer__advertising, .section__who-we-are {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__text-review, .section__testimonials, .section__card-inner--column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer__heading, .section__headline-testimonials, .section__headline-features, .section__headline-storage-bank, .section__headline-data {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.header__left-part {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.header__nav-link {
+  color: #485d68;
+}
+.header__nav-link:hover {
+  color: #8a40ee;
+}
+.header__btn-request {
+  background: #fff;
+  border: 1px solid #9c69e2;
+  color: #212353;
+}
+.header__btn-request:hover {
+  background: #9c69e2;
+  color: #fff;
+}
+
+.section__btn-learn-more {
+  background: #9c69e2;
+  border: 1px solid #9c69e2;
+  margin-top: 50px;
+  color: #fff;
+}
+.section__img-ladies-dashboard {
+  height: 90%;
+  width: 65%;
+  top: 25%;
+  left: 35%;
+  position: absolute;
+}
+.section__data-warehouse {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+.section__headline-data {
+  font-size: 80px;
+  color: #212353;
+}
+.section__paragraph {
+  margin-bottom: 60px;
+  line-height: 29px;
+  color: #485d68;
+}
+.section__data-warehouse {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.section__paragraph-data {
+  line-height: 160%;
+  max-width: 370px;
+}
+.section__who-we-are {
+  justify-content: center;
+  padding: 50px;
+  margin-top: 110px;
+  background: #fde8f5;
+  border-radius: 50px;
+}
+.section__img-lady-laptop {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__storage-bank {
+  margin-left: 10%;
+}
+.section__headline-storage-bank {
+  max-width: 500px;
+  font-size: 40px;
+  line-height: 52px;
+  color: #212353;
+}
+.section__paragraph-storage-bank {
+  max-width: 500px;
+  line-height: 160%;
+}
+.section__features-text-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.section__headline-features {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #212353;
+}
+.section__paragraph-features {
+  max-width: 638px;
+  line-height: 150%;
+  text-align: center;
+  color: #485d68;
+}
+.section__features-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.section__card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 15%;
+  min-height: 300px;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.section__card-wrap--blue {
+  background: #f0faf9;
+}
+.section__card-wrap--violet {
+  background: #f6f0fd;
+}
+.section__card-img {
+  position: absolute;
+  right: 80%;
+}
+.section__card-inner--column {
+  max-width: 400px;
+  padding: 30px 40px 30px 90px;
+}
+.section__card-heading {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #212353;
+}
+.section__card-text-about {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #485d68;
+}
+.section__card-btn {
+  line-height: 160%;
+  letter-spacing: 0.005em;
+  line-height: 26px;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+}
+.section__testimonials {
+  margin-top: 100px;
+  background: #ccddff;
+  border-radius: 50px;
+  background-image: url("../assets/png/Vecto.png");
+}
+.section__headline-testimonials {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-size: 40px;
+  line-height: 130%;
+  color: #485d68;
+}
+.section__review-blocks--row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.section__review-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #9c69e2;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  margin-bottom: 100px;
+}
+.section__photo-review {
+  margin-top: 20px;
+  height: 37%;
+  border-radius: 100px;
+}
+.section__text-review {
+  padding-left: 10px;
+}
+.section__name-review {
+  line-height: 160%;
+  color: #212353;
+}
+.section__site-review {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #9c69e2;
+}
+.section__comment-review {
+  max-width: 300px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: justify;
+  color: #485d68;
+}
+
+.footer__advertising {
+  align-items: center;
+  margin-top: 100px;
+}
+.footer__right-part {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer__heading {
+  font-size: 40px;
+  line-height: 130%;
+  color: #212353;
+}
+.footer__text-line {
+  width: 370px;
+  height: 26px;
+  top: 64px;
+  line-height: 160%;
+  color: #485d68;
+}
+.footer__btn-learn-more {
+  background-color: #f063b8;
+  border: 1px solid #f063b8;
+  color: #f6f0fd;
+  margin-right: 40px;
+}
+.footer__btn-request {
+  background: #fff;
+  border: 1px solid #f063b8;
+}
+.footer__btn-request:hover {
+  background: #f063b8;
+  border: 1px solid #f063b8;
+  color: #f6f0fd;
+}
+.footer__company-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+}
+.footer__company-name {
+  color: #212353;
+  margin-left: 20px;
+}
+.footer__contacts-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__nav-list, .footer__social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__nav-list h4, .footer__social-media h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+}
+.footer__link, .footer__contacts {
+  line-height: 200%;
+  color: #485d68;
+}
+.footer__link:hover, .footer__contacts:hover {
+  color: #8a40ee;
+}
+.footer__social-icons {
+  margin-top: 30px;
+  font-size: 30px;
+  margin-right: 20px;
+  color: #485d68;
+}
+.footer__icon-fa:hover {
+  color: #2d6fe9;
+}
+.footer__icon-tw:hover {
+  color: #63d4f0;
+}
+.footer__icon-in:hover {
+  color: #f063e4;
+}
+.footer__copyright {
+  margin-top: 70px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 180%;
+}
+
+@media screen and (max-width: 1100px) {
+  .section__img-ladies-dashboard {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

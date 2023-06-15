@@ -8,8 +8,8 @@
 }
 
 .container {
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .header {
@@ -21,6 +21,7 @@
 
   &__left-part {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__nav {
@@ -61,7 +62,7 @@
 
   &__img-ladies-dashboard {
     height: 90%;
-    width: 65%;
+    width: 85%;
     top: 25%;
     left: 35%;
     position: absolute;
