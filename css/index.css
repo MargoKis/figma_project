@@ -28,34 +28,50 @@ a {
   letter-spacing: 0.005em;
 }
 
-.footer__link, .footer__contacts, .footer__btn-request, .section__name-review, .section__card-btn, .header__nav-link {
+.footer__link,
+.footer__contacts,
+.footer__btn-request,
+.section__name-review,
+.section__card-btn,
+.header__nav-link {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
 }
 
-.footer__text-line, .section__paragraph-features, .section__paragraph-storage-bank, .section__paragraph-data, .section__btn-learn-more {
+.footer__text-line,
+.section__paragraph-features,
+.section__paragraph-storage-bank,
+.section__paragraph-data,
+.section__btn-learn-more {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
 }
 
-.footer__advertising, .section__who-we-are {
+.footer__advertising,
+.section__who-we-are {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.section__text-review, .section__testimonials, .section__card-inner--column {
+.section__text-review,
+.section__testimonials,
+.section__card-inner--column {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.footer__heading, .section__headline-testimonials, .section__headline-features, .section__headline-storage-bank, .section__headline-data {
+.footer__heading,
+.section__headline-testimonials,
+.section__headline-features,
+.section__headline-storage-bank,
+.section__headline-data {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
@@ -130,11 +146,6 @@ a {
   line-height: 29px;
   color: #485d68;
 }
-.section__data-warehouse {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
 .section__paragraph-data {
   line-height: 160%;
   max-width: 370px;
@@ -149,7 +160,7 @@ a {
 .section__img-lady-laptop {
   max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .section__storage-bank {
   margin-left: 10%;
@@ -317,10 +328,8 @@ a {
   color: #212353;
 }
 .footer__text-line {
-  width: 370px;
   height: 26px;
   top: 64px;
-  line-height: 160%;
   color: #485d68;
 }
 .footer__btn-learn-more {
@@ -357,13 +366,15 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
-.footer__nav-list, .footer__social-media {
+.footer__nav-list,
+.footer__social-media {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
-.footer__nav-list h4, .footer__social-media h4 {
+.footer__nav-list h4,
+.footer__social-media h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -371,11 +382,14 @@ a {
   line-height: 160%;
   color: #212353;
 }
-.footer__link, .footer__contacts {
+.footer__link,
+.footer__contacts {
   line-height: 200%;
   color: #485d68;
+  cursor: pointer;
 }
-.footer__link:hover, .footer__contacts:hover {
+.footer__link:hover,
+.footer__contacts:hover {
   color: #8a40ee;
 }
 .footer__social-icons {
@@ -384,15 +398,7 @@ a {
   margin-right: 20px;
   color: #485d68;
 }
-.footer__icon-fa:hover {
-  color: #2d6fe9;
-}
-.footer__icon-tw:hover {
-  color: #63d4f0;
-}
-.footer__icon-in:hover {
-  color: #f063e4;
-}
+
 .footer__copyright {
   margin-top: 70px;
   font-family: "Montserrat";
@@ -402,8 +408,59 @@ a {
   line-height: 180%;
 }
 
-@media screen and (max-width: 1100px) {
+.custom-icon-fa:hover {
+  color: #2d6fe9;
+  background-color: #ffffff;
+  border: 1px solid #2d6fe9;
+}
+.custom-icon-tw:hover {
+  color: #63d4f0;
+  background-color: #ffffff;
+  border: 1px solid #63d4f0;
+}
+.custom-icon-in:hover {
+  color: #f063e4;
+  background-color: #ffffff;
+  border: 1px solid #f063e4;
+}
+
+.custom-icon-fa,
+.custom-icon-tw,
+.custom-icon-in {
+  color: #ffffff;
+  background-color: #d4d4d4;
+  z-index: 5;
+  padding: 20px;
+  margin-right: 9px;
+  border-radius: 50%;
+  border: 1px solid #d4d4d4;
+}
+
+.border-fa {
+  padding: 18px 28px;
+}
+
+.border-tw {
+  padding: 19px 23px;
+}
+
+.border-in {
+  padding: 19px 24px;
+}
+
+@media screen and (max-width: 1070px) {
   .section__img-ladies-dashboard {
-    display: none;
+    position: static;
+    height: 150%;
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 5%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+@media screen and (max-width: 850px) {
+  .section__img-ladies-dashboard {
+    margin-left: 7%;
+    margin-top: 5%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

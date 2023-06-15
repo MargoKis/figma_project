@@ -319,10 +319,8 @@
   }
 
   &__text-line {
-    width: 370px;
     height: 26px;
     top: 64px;
-    line-height: 160%;
     @extend %montserrat18;
     color: $gray;
   }
@@ -391,6 +389,7 @@
     @extend %montserrat16;
     line-height: 200%;
     color: $gray;
+    cursor: pointer;
 
     &:hover {
       color: #8a40ee;
@@ -426,9 +425,58 @@
   }
 }
 
+.custom-icon-fa:hover {
+  color: #2d6fe9;
+  background-color: #ffffff;
+  border: 1px solid #2d6fe9;
+}
+.custom-icon-tw:hover {
+  color: #63d4f0;
+  background-color: #ffffff;
+  border: 1px solid #63d4f0;
+}
+.custom-icon-in:hover {
+  color: #f063e4;
+  background-color: #ffffff;
+  border: 1px solid #f063e4;
+}
 
-@media screen and (max-width: 1100px){
-    .section__img-ladies-dashboard {
-        display: none;
-    }
+.custom-icon-fa,
+.custom-icon-tw,
+.custom-icon-in {
+  color: #ffffff;
+  background-color: #d4d4d4;
+  z-index: 5;
+  padding: 20px;
+  margin-right: 9px;
+  border-radius: 50%;
+  border: 1px solid #d4d4d4;
+}
+
+.border-fa {
+  padding: 18px 28px;
+}
+
+.border-tw {
+  padding: 19px 23px;
+}
+
+.border-in {
+  padding: 19px 24px;
+}
+
+@media screen and (max-width: 1070px) {
+  .section__img-ladies-dashboard {
+    position: static;
+    height: 150%;
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 5%;
   }
+}
+@media screen and (max-width: 850px) {
+  .section__img-ladies-dashboard {
+    margin-left: 7%;
+    margin-top: 5%;
+  }
+}
