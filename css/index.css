@@ -122,6 +122,7 @@ a {
   background: #9c69e2;
   border: 1px solid #9c69e2;
   margin-top: 50px;
+  margin-bottom: 50px;
   color: #fff;
 }
 .section__img-ladies-dashboard {
@@ -133,6 +134,7 @@ a {
 }
 .section__data-warehouse {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   position: relative;
   z-index: 10;
@@ -140,6 +142,7 @@ a {
 .section__headline-data {
   font-size: 80px;
   color: #212353;
+  justify-content: center;
 }
 .section__paragraph {
   margin-bottom: 60px;
@@ -152,8 +155,8 @@ a {
 }
 .section__who-we-are {
   justify-content: center;
-  padding: 50px;
-  margin-top: 110px;
+  padding: 40px;
+  margin-top: 80px;
   background: #fde8f5;
   border-radius: 50px;
 }
@@ -174,6 +177,7 @@ a {
 .section__paragraph-storage-bank {
   max-width: 500px;
   line-height: 160%;
+  text-align: justify;
 }
 .section__features-text-wrap {
   display: flex;
@@ -250,15 +254,17 @@ a {
   cursor: pointer;
 }
 .section__testimonials {
-  margin-top: 100px;
+  margin-top: 80px;
   background: #ccddff;
   border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-image: url("../assets/png/Vecto.png");
 }
 .section__headline-testimonials {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 80px;
   font-size: 40px;
   line-height: 130%;
   color: #485d68;
@@ -268,11 +274,12 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 .section__review-block {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
   background: #fff;
@@ -315,7 +322,7 @@ a {
 
 .footer__advertising {
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .footer__right-part {
   display: flex;
@@ -352,6 +359,7 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .footer__row {
   display: flex;
@@ -393,9 +401,8 @@ a {
   color: #8a40ee;
 }
 .footer__social-icons {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 30px;
-  margin-right: 20px;
   color: #485d68;
 }
 
@@ -437,30 +444,244 @@ a {
 }
 
 .border-fa {
-  padding: 18px 28px;
+  padding: 12px 20px;
 }
 
 .border-tw {
-  padding: 19px 23px;
+  padding: 13px 17px;
 }
 
 .border-in {
-  padding: 19px 24px;
+  padding: 13px 18px;
+}
+
+.footer__copyright {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1060px) {
+  .section__data-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .section__paragraph-data {
+    margin-right: 30px;
+  }
+  @media screen and (max-width: 660px) {
+    .section__paragraph-data {
+      text-align: justify;
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .section__headline-data {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 670px) {
+    .section__headline-data {
+      font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 570px) {
+    .section__headline-data {
+      font-size: 40px;
+    }
+  }
 }
 
 @media screen and (max-width: 1070px) {
   .section__img-ladies-dashboard {
+    margin-top: 25px;
     position: static;
-    height: 150%;
+    margin-left: 5%;
     width: 80%;
-    margin-left: 13%;
-    margin-top: 5%;
   }
 }
 @media screen and (max-width: 850px) {
   .section__img-ladies-dashboard {
+    position: static;
     margin-left: 7%;
-    margin-top: 5%;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .section__headline-storage-bank {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .section__headline-storage-bank {
+    text-align: center;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .section__storage-bank {
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__who-we-are {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__paragraph-features {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__card-img {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section__card-wrap {
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 700px) {
+    .section__card-wrap {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__card-inner--column {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .section__card-text-about {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__testimonials {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .section__headline-testimonials {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__review-blocks--row {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__advertising {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__right-part {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__btn-learn-more {
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    .footer__btn-learn-more {
+      margin-bottom: 30px;
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer__btn-learn-more {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer__contact-wrap {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer__social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__icon-fa {
+    margin-bottom: 10px;
+  }
+  .footer__icon-tw {
+    margin-bottom: 10px;
+  }
+  .footer__icon-in {
+    margin-bottom: 10px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer__social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer__social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 402px) {
+  .footer__social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer__nav-list {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer__company-details {
+    justify-content: space-around;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
