@@ -499,7 +499,7 @@ header {
   }
 
   header .header__nav.active {
-    top: 48px;
+    top: 60px;
   }
 
   .header__nav {
@@ -507,7 +507,19 @@ header {
     display: block;
   }
   .header__btn-request {
-    display: none;
+    /* display: none; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__btn-request {
+    width: 170px;
+  }
+  .header {
+    padding: 30px;
+  }
+  header .header__nav.active {
+    top: 90px;
   }
 }
 
