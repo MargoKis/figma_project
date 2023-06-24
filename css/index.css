@@ -498,21 +498,6 @@ header {
     transition: 0.3s;
   }
 
-  .header__btn-request {
-    position: absolute;
-    top: -400px;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  header .header__btn-request.active {
-    top: 48px;
-  }
-
   header .header__nav.active {
     top: 48px;
   }
