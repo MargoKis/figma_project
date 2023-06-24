@@ -1,0 +1,482 @@
+@import "reset";
+@import "components";
+@import "extends";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  &__left-part {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-left: 40px;
+  }
+
+  &__nav-link {
+    @extend %montserrat16;
+    color: $gray;
+
+    &:hover {
+      color: #8a40ee;
+    }
+  }
+
+  &__btn-request {
+    background: $white;
+    border: 1px solid #9c69e2;
+    color: #212353;
+
+    &:hover {
+      background: #9c69e2;
+      color: $white;
+    }
+  }
+}
+
+.section {
+  &__btn-learn-more {
+    @extend %montserrat18;
+    background: #9c69e2;
+    border: 1px solid #9c69e2;
+    color: $white;
+  }
+
+  &__img-ladies-dashboard {
+    height: 90%;
+    width: 65%;
+    top: 25%;
+    left: 35%;
+    position: absolute;
+  }
+
+  &__data-warehouse {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__headline-data {
+    @extend %workSans700;
+    font-size: 80px;
+    color: #212353;
+  }
+
+  &__paragraph {
+    margin-bottom: 60px;
+    line-height: 29px;
+    color: $gray;
+  }
+
+  &__data-warehouse {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &__paragraph-data {
+    @extend %montserrat18;
+    line-height: 160%;
+    max-width: 370px;
+  }
+
+  &__who-we-are {
+    @extend %flexRowBetween;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 110px;
+    background: #fde8f5;
+    border-radius: 50px;
+  }
+
+  &__img-lady-laptop {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__storage-bank {
+    margin-left: 10%;
+  }
+
+  &__headline-storage-bank {
+    @extend %workSans700;
+    max-width: 500px;
+    font-size: 40px;
+    line-height: 52px;
+    color: $deepBlue;
+  }
+
+  &__paragraph-storage-bank {
+    @extend %montserrat18;
+    max-width: 500px;
+    line-height: 160%;
+  }
+
+  &__features-text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+  &__headline-features {
+    @extend %workSans700;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $deepBlue;
+  }
+
+  &__paragraph-features {
+    @extend %montserrat18;
+    max-width: 638px;
+    line-height: 150%;
+    text-align: center;
+    color: $gray;
+  }
+
+  &__features-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+
+  &__card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 15%;
+    min-height: 300px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &--blue {
+      background: #f0faf9;
+    }
+
+    &--violet {
+      background: #f6f0fd;
+    }
+  }
+
+  &__card-img {
+    position: absolute;
+    right: 80%;
+  }
+
+  &__card-inner--column {
+    @extend %flexWrapColomn;
+    max-width: 400px;
+    padding: 30px 40px 30px 90px;
+  }
+
+  &__card-heading {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: $deepBlue;
+  }
+
+  &__card-text-about {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray;
+  }
+
+  &__card-btn {
+    @extend %montserrat16;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    cursor: pointer;
+  }
+
+  &__testimonials {
+    @extend %flexWrapColomn;
+    margin-top: 100px;
+    background: #ccddff;
+    border-radius: 50px;
+    background-image: url("../assets/png/Vecto.png");
+  }
+
+  &__headline-testimonials {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    @extend %workSans700;
+    font-size: 40px;
+    line-height: 130%;
+    color: $gray;
+  }
+
+  &__review-blocks--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+
+  &__review-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: $white;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    margin-bottom: 100px;
+  }
+
+  &__photo-review {
+    margin-top: 20px;
+    height: 37%;
+    border-radius: 100px;
+  }
+
+  &__text-review {
+    @extend %flexWrapColomn;
+    padding-left: 10px;
+  }
+
+  &__name-review {
+    @extend %montserrat16;
+    line-height: 160%;
+    color: $deepBlue;
+  }
+
+  &__site-review {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #9c69e2;
+  }
+
+  &__comment-review {
+    max-width: 300px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: justify;
+    color: $gray;
+  }
+}
+
+.footer {
+  &__advertising {
+    @extend %flexRowBetween;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  &__right-part {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__heading {
+    @extend %workSans700;
+    font-size: 40px;
+    line-height: 130%;
+    color: $deepBlue;
+  }
+
+  &__text-line {
+    height: 26px;
+    top: 64px;
+    @extend %montserrat18;
+    color: $gray;
+  }
+
+  &__btn-learn-more {
+    background-color: #f063b8;
+    border: 1px solid #f063b8;
+    color: #f6f0fd;
+    margin-right: 40px;
+  }
+
+  &__btn-request {
+    @extend %montserrat16;
+    background: $white;
+    border: 1px solid #f063b8;
+  }
+
+  &__btn-request:hover {
+    background: #f063b8;
+    border: 1px solid #f063b8;
+    color: #f6f0fd;
+  }
+
+  &__company-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__company-name {
+    color: $deepBlue;
+    margin-left: 20px;
+  }
+
+  &__contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__nav-list,
+  &__social-media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 160%;
+      color: $deepBlue;
+    }
+  }
+
+  &__link,
+  &__contacts {
+    @extend %montserrat16;
+    line-height: 200%;
+    color: $gray;
+    cursor: pointer;
+
+    &:hover {
+      color: #8a40ee;
+    }
+  }
+
+  &__social-icons {
+    margin-top: 30px;
+    font-size: 30px;
+    margin-right: 20px;
+    color: #485d68;
+  }
+
+  &__icon-fa:hover {
+    color: #2d6fe9;
+  }
+
+  &__icon-tw:hover {
+    color: #63d4f0;
+  }
+
+  &__icon-in:hover {
+    color: #f063e4;
+  }
+
+  &__copyright {
+    margin-top: 70px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 180%;
+  }
+}
+
+.custom-icon-fa:hover {
+  color: #2d6fe9;
+  background-color: #ffffff;
+  border: 1px solid #2d6fe9;
+}
+.custom-icon-tw:hover {
+  color: #63d4f0;
+  background-color: #ffffff;
+  border: 1px solid #63d4f0;
+}
+.custom-icon-in:hover {
+  color: #f063e4;
+  background-color: #ffffff;
+  border: 1px solid #f063e4;
+}
+
+.custom-icon-fa,
+.custom-icon-tw,
+.custom-icon-in {
+  color: #ffffff;
+  background-color: #d4d4d4;
+  z-index: 5;
+  padding: 20px;
+  margin-right: 9px;
+  border-radius: 50%;
+  border: 1px solid #d4d4d4;
+}
+
+.border-fa {
+  padding: 18px 28px;
+}
+
+.border-tw {
+  padding: 19px 23px;
+}
+
+.border-in {
+  padding: 19px 24px;
+}
+
+@media screen and (max-width: 1070px) {
+  .section__img-ladies-dashboard {
+    position: static;
+    height: 150%;
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section__img-ladies-dashboard {
+    margin-left: 7%;
+    margin-top: 5%;
+  }
+}
